@@ -1,0 +1,89 @@
+header {
+  background-color: #C86DD7;
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  justify-content: space-between;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+
+.left-header {
+  align-items: center;
+  display: flex;
+  margin: 0 20px;
+  gap: 40px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+a {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a:hover{
+  border-bottom: 1px solid #FFF;
+}
+
+.rigth-header{
+  align-items: center;
+  display: flex;
+  gap: 23px;
+  margin: 0 32px;
+}
+
+/* .btn-share-host{
+  
+  
+  color: #fff;
+  padding: 12px;
+} */
+
+.btn-share-host{
+  position: relative;
+  background-color: #00C88C;
+  border-radius: 4px;
+  font-size: 15px;
+  color: #FFF;
+  padding: 12px;
+  text-align: center;
+  transition-duration: 0.5s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn-share-host:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.btn-share-host:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+
+.btn-sing-in{
+  text-decoration: none;
+}
