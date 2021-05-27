@@ -1,6 +1,6 @@
 import React from 'react';
 import { badge } from '../assets/vectors';
-import './css/header.scss';
+import './scss/Header.scss';
 
 function Header() {
   return (

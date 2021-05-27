@@ -1,0 +1,66 @@
+@import '../../assets/styles/main.scss';
+
+header {
+  color: $main-color;
+  display: flex;
+  font-size: 16px;
+  font-weight: 500;
+  justify-content: space-between;
+  left: 0;
+  margin: auto;
+  max-width: 1440px;
+  position: absolute;
+  right: 0;
+  width: 100;
+}
+
+.left-header {
+  align-items: center;
+  display: flex;
+  gap: 40px;
+  margin: 0 20px;
+
+  ul {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    li {
+      display: inline-block;
+      a {
+        @include link-hover($main-color, $shadow-color);
+        font-size: 1.05rem;
+        color: $main-color;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.rigth-header {
+  align-items: center;
+  display: flex;
+  gap: 23px;
+  margin: 0 32px;
+  .btn-sing-in {
+  @include link-hover($main-color, $shadow-color);
+  color: $main-color;
+  font-size: 0.8rem;
+  text-decoration: none;
+  margin-top: 10px
+}
+  .btn-share-host {
+    @include btn-click();
+    background: #00c88c;
+    border-radius: 4px;
+    border: none;
+    color: $main-color;
+    cursor: pointer;
+    font-size: .8rem;
+    overflow: hidden;
+    padding: 12px 21px;
+    position: relative;
+    transition-duration: 0.5s;
+  }
+}
+
+// Usar Media Querry

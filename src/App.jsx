@@ -1,10 +1,10 @@
-import Header from './Components/Header';
 import './App.scss'
+import Banner from './Components/Banner';
 
 function App() {
   return (
     <div>
-      <Header />
+      <Banner />
     </div>
   );
 }
