@@ -1,0 +1,90 @@
+@mixin link-hover($color) {
+  &:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: $color;
+    transition: width .3s;
+  }
+  &:hover:after {
+    width: 100%;
+  }
+}
+
+header {
+  background-color: #c86dd7;
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  justify-content: space-between;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+
+.left-header {
+  align-items: center;
+  display: flex;
+  margin: 0 20px;
+  gap: 40px;
+
+  ul {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+  }
+}
+
+
+a {
+  @include link-hover(#FFF);
+  color: #FFF;
+  text-decoration: none;
+}
+
+.rigth-header {
+  align-items: center;
+  display: flex;
+  gap: 23px;
+  margin: 0 32px;
+}
+
+.btn-share-host {
+  position: relative;
+  background-color: #00c88c;
+  border-radius: 4px;
+  font-size: 15px;
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+  transition-duration: 0.5s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  &:after {
+    content: '';
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+  }
+}
+
+.btn-share-host:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+.btn-sing-in {
+  text-decoration: none;
+}

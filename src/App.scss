@@ -9,9 +9,12 @@ body {
   background: #faf9f7;
 }
 
-a:visited {
-  /* color: #5e20a4; */
+a, a:visited {
+  // color: #5e20a4;
   font-weight: 500;
   transition: .15s;
   text-underline-position: under;
+  // &:focus, &:hover {
+  //   color: scale-color(#5e20a4, $saturation: 50%, $lightness: 30%);
+  // }
 }
