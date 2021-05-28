@@ -1,36 +1,86 @@
 // Collors
-$main-color: #FFF;
+$main-color: #fff;
+$section-text-color: #3d3d3d;
 $shadow-color: #000;
-
+$btn-primary: #00c88c;
 
 // Interaction
 @mixin link-hover($color, $shadow) {
-    &:hover{
-      color: $main-color;
-      text-shadow: 2px 2px $shadow;
-      border-bottom: 2px solid $color;
-      transition: .2s;
+  &:hover {
+    border-bottom: 2px solid $color;
+    color: $main-color;
+    text-shadow: 2px 2px $shadow;
+    transition: 0.2s;
+  }
+}
+
+@mixin btn-click {
+  &:after {
+    content: '';
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+  }
+  &:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+  }
+}
+
+// style
+@mixin dual-wrapper {
+  color: section-text-color;
+  display: flex;
+  justify-content: center;
+  .section-text {
+    display: flex;
+    flex-direction: column;
+    h2 {
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 32px;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 28px;
+      margin: 40px 0;
     }
   }
-  
-  @mixin btn-click {
-    &:after {
-      content: '';
-      background: #f1f1f1;
-      display: block;
-      position: absolute;
-      padding-top: 300%;
-      padding-left: 350%;
-      margin-left: -20px !important;
-      margin-top: -120%;
-      opacity: 0;
-      transition: all 0.8s;
-    }
-    &:active:after {
-      padding: 0;
-      margin: 0;
-      opacity: 1;
-      transition: 0s;
-    }
+  & > img {
+    align-self: center;
   }
-  
+}
+
+@mixin column-wrapper {
+  align-items: center;
+  color: $section-text-color;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  .section-text {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@mixin btn-style ($color) {
+  @include btn-click();
+  background: $color;
+  border-radius: 4px;
+  border: none;
+  color: $main-color;
+  cursor: pointer;
+  font-size: 0.8rem;
+  overflow: hidden;
+  padding: 12px 21px;
+  position: relative;
+  transition-duration: 0.5s;
+}
