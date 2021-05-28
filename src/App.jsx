@@ -1,5 +1,6 @@
 import './App.scss'
 import Banner from './Components/Banner';
+import Main from './Components/Main';
 import Section from './Components/Section';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div>
       <Banner />
       <Section />
+      <Main />
     </div>
   );
 }

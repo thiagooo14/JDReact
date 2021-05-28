@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import './scss/Banner.scss';
-import banner from '../assets/images/banner_modal.png';
+import banner from '../assets/images/ImageHeader.png';
 import { play } from '../assets/vectors';
 
 function Banner() {
