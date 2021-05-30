@@ -7,7 +7,6 @@ header {
   font-weight: 500;
   justify-content: space-between;
   left: 0;
-  top: -16px;
   margin: auto;
   max-width: 1440px;
   position: absolute;
@@ -43,15 +42,30 @@ header {
   gap: 23px;
   margin: 0 32px;
   .btn-sing-in {
-  @include link-hover($main-color, $shadow-color, 2px);
-  color: $main-color;
-  font-size: 0.8rem;
-  text-decoration: none;
-  margin-top: 10px
-}
+    @include link-hover($main-color, $shadow-color, 2px);
+    color: $main-color;
+    font-size: 0.8rem;
+    text-decoration: none;
+    margin-top: 10px;
+  }
   .btn-share-host {
-    @include btn-style($btn-primary)
+    @include btn-style($btn-primary);
   }
 }
 
-// Usar Media Querry
+@include breakpoint(930px) {
+  .left-header {
+    nav {
+      display: none;
+    }
+  }
+}
+
+@include breakpoint(480px) {
+  .rigth-header {
+    .btn-sing-in {
+      display: none;
+    }
+    margin: 0 16px;
+  }
+}

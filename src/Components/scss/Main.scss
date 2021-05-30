@@ -35,7 +35,7 @@
       padding: 0 20px;
       height: 44px;
     }
-    button {
+    .submit {
       @include btn-style($btn-primary);
       height: 44px;
       margin: 0;

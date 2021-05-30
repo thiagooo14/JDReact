@@ -14,7 +14,7 @@ function Footer() {
       <div className='footer-main'>
         <h2>Become a nanny share host</h2>
         <p>Takes less than 5 minutes to get started</p>
-        <button>
+        <button className='footer-btn' >
           <img src={calendar} alt='calendar' />
           <div>
             <span>Create Your Nanny Share</span>

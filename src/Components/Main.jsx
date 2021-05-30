@@ -37,7 +37,9 @@ function Main() {
         <form className='forms'>
           <input placeholder='Your name' required />
           <input type='email' placeholder='Your email' required />
-          <button type='submit'>Send</button>
+          <button type='submit' className='submit'>
+            Send
+          </button>
         </form>
       </section>
       <div className='divider' />

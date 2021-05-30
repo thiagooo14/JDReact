@@ -19,7 +19,7 @@ footer {
   }
 }
 
-button {
+.footer-btn {
   @include btn-style($btn-secondary);
   align-items: center;
   display: flex;
