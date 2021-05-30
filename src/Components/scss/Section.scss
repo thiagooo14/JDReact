@@ -22,3 +22,30 @@
     }
   }
 }
+
+@include breakpoint(930px) {
+  .section{
+    flex-direction: column;
+    height: 216px;
+    gap: 12px;
+    .info {
+      flex-direction: column;
+      text-align: center;
+      gap: 12px;
+    }
+  }
+}
+
+@include breakpoint(480px) {
+  .section {
+    .info {
+      h2 {
+        max-width: 66%;
+      }
+      p {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+}

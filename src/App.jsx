@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <Banner />
-      {/* <Section /> */}
+      <Section />
       {/* <Main /> */}
       {/* <Footer /> */}
     </div>
