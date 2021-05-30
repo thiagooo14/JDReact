@@ -3,13 +3,14 @@ $main-color: #fff;
 $section-text-color: #3d3d3d;
 $shadow-color: #000;
 $btn-primary: #00c88c;
+$btn-secondary: #5e20a4;
 
 // Interaction
-@mixin link-hover($color, $shadow) {
+@mixin link-hover($color, $shadow, $size) {
   &:hover {
     border-bottom: 2px solid $color;
-    color: $main-color;
-    text-shadow: 2px 2px $shadow;
+    color: $color;
+    text-shadow: $size $size $shadow;
     transition: 0.2s;
   }
 }
@@ -71,7 +72,7 @@ $btn-primary: #00c88c;
   }
 }
 
-@mixin btn-style ($color) {
+@mixin btn-style($color) {
   @include btn-click();
   background: $color;
   border-radius: 4px;
@@ -83,4 +84,19 @@ $btn-primary: #00c88c;
   padding: 12px 21px;
   position: relative;
   transition-duration: 0.5s;
+}
+
+@mixin divider {
+  width: 54vw;
+  height: 2px;
+  background-color: #dfdfdf;
+  margin: auto;
+}
+
+// Breakpoints
+
+@mixin breakpoint($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
 }

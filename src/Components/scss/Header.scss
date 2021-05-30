@@ -7,6 +7,7 @@ header {
   font-weight: 500;
   justify-content: space-between;
   left: 0;
+  top: -16px;
   margin: auto;
   max-width: 1440px;
   position: absolute;
@@ -27,7 +28,7 @@ header {
     li {
       display: inline-block;
       a {
-        @include link-hover($main-color, $shadow-color);
+        @include link-hover($main-color, $shadow-color, 5px);
         font-size: 1.05rem;
         color: $main-color;
         text-decoration: none;
@@ -42,7 +43,7 @@ header {
   gap: 23px;
   margin: 0 32px;
   .btn-sing-in {
-  @include link-hover($main-color, $shadow-color);
+  @include link-hover($main-color, $shadow-color, 2px);
   color: $main-color;
   font-size: 0.8rem;
   text-decoration: none;

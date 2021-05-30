@@ -41,7 +41,7 @@ $banner-gradient: linear-gradient(
       align-items: center;
       gap: 16px;
       a {
-        @include link-hover($main-color, $shadow-color);
+        @include link-hover($main-color, $shadow-color, 2px);
         color: $main-color;
         text-decoration: none;
       }

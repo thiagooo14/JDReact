@@ -1,1 +1,92 @@
 @import '../../assets/styles/main.scss';
+
+footer {
+  background: $main-color;
+}
+
+.footer-main {
+  @include column-wrapper;
+  padding: 82px 0 24px;
+  h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2rem;
+    margin-bottom: 16px;
+  }
+  p {
+    line-height: 28px;
+    font-size: 1.15rem;
+  }
+}
+
+button {
+  @include btn-style($btn-secondary);
+  align-items: center;
+  display: flex;
+  gap: 21px;
+  margin: 32px 0 24px;
+  width: 304px;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    span:nth-child(1) {
+      font-size: 1rem;
+      line-height: 28px;
+    }
+    span:nth-child(2) {
+      font-size: 12px;
+      line-height: 1rem;
+    }
+  }
+}
+
+.footer-nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 58px 128px;
+  .logo {
+    width: 15vw;
+  }
+  ul {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    li {
+      display: inline-block;
+      a {
+        @include link-hover($section-text-color, $shadow-color, 0.5px);
+        color: $section-text-color;
+        font-size: 0.9rem;
+        font-weight: 500;
+        line-height: 1.25rem;
+        text-decoration: none;
+      }
+    }
+  }
+  .social {
+    display: flex;
+    gap: 16px;
+    margin-inline: 5px;
+    align-items: center;
+    a {
+      align-items: center;
+      border-radius: 100%;
+      display: flex;
+      &:hover {
+        background: scale-color($color: #cacaca, $lightness: -10%);
+      }
+    }
+  }
+}
+
+.footer-copy {
+  font-size: 12px;
+  padding: 32px 0;
+  text-align: center;
+}
+
+.divider {
+  @include divider();
+}
