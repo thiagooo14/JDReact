@@ -47,7 +47,7 @@ function Main() {
         </div>
       </section>
       <div className='divider' />
-      {/* <section className='section3'>
+      <section className='section3'>
         <img src={price} alt='payment exemple' />
         <div className='section-text'>
           <h2>Shared payments made simple</h2>
@@ -60,7 +60,7 @@ function Main() {
           </p>
           <a href='/'>Read how Bridget’s share (without Hapu) ended over $15</a>
         </div>
-      </section> */}
+      </section>
       <div className='divider' />
       {/* <section className='section4'>
         <div className='section-text'>

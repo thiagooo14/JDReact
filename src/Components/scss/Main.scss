@@ -78,6 +78,28 @@
   & > img {
     width: 31.5vw;
   }
+  @include breakpoint (930px) {
+    @include dual-tablet;
+    flex-direction: column;
+    gap: 40px;
+    &>img {
+      width: 60vw;
+    }
+  }
+
+  @include breakpoint (480px) {
+    @include dual-phone;
+    margin-inline: 4.4vw;
+    .section-text{
+      h2 {
+        margin: 0 19vw;
+      }
+      &>img {
+        width: 86.5vw;
+      }
+    }
+    
+  }
 }
 
 .section4 {
@@ -97,6 +119,15 @@
   }
   & > img {
     align-self: center;
+  }
+
+  @include breakpoint (930px) {
+    @include column-tablet;
+    
+  }
+
+  @include breakpoint (480px) {
+
   }
 }
 
