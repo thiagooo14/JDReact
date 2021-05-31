@@ -77,8 +77,8 @@ function Main() {
         <img src={history} alt='Nany history demonstration' />
       </section>
       <div className='divider' />
-      {/* <section className='section5'>
-        <img src={diary} alt='diary' />
+      <section className='section5'>
+        <img src={diary} alt='diary' className='diary' />
         <div className='section-text'>
           <h2>Coming soon: Nanny Share Daily Diary!</h2>
           <p>
@@ -88,7 +88,7 @@ function Main() {
             daily adventures fo your little ones. We can’t wait!
           </p>
         </div>
-      </section> */}
+      </section>
     </div>
   );
 }

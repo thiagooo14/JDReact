@@ -143,6 +143,7 @@
   .section-text {
     gap: 40px;
     h2 {
+      margin-top: 40px;
       font-size: 28px;
       line-height: 32px;
       font-weight: 500;
@@ -151,8 +152,13 @@
       font-size: 16px;
       line-height: 28px;
     }
-    & > img {
-      margin-bottom: 40px;
-    }
+  }
+
+  @include breakpoint(930px) {
+    @include column-tablet;
+  }
+
+  @include breakpoint(480px) {
+    @include column-phone;
   }
 }
