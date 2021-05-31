@@ -11,6 +11,22 @@
   & > img {
     width: 53%;
   }
+
+  @include breakpoint(930px) {
+    @include dual-tablet;
+    flex-direction: column-reverse;
+    gap: 24px;
+    & > img {
+      width: 70vw;
+    }
+  }
+
+  @include breakpoint(480px) {
+    @include dual-phone;
+    & > img {
+      width: 85vw;
+    }
+  }
 }
 
 .section2 {
@@ -40,6 +56,18 @@
       height: 44px;
       margin: 0;
     }
+  }
+
+  @include breakpoint(930px) {
+    @include column-tablet;
+    .forms {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  @include breakpoint(480px) {
+    @include column-phone;
   }
 }
 
@@ -86,8 +114,8 @@
       font-size: 16px;
       line-height: 28px;
     }
-    &>img {
-      margin-bottom: 40px
+    & > img {
+      margin-bottom: 40px;
     }
   }
 }

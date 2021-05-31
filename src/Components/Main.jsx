@@ -27,23 +27,27 @@ function Main() {
         </div>
         <img src={badge} alt='logo' />
       </section>
+
       <div className='divider' />
+
       <section className='section2'>
-        <h2>Are you a parent without a nanny and looking to share?</h2>
-        <p>
-          Leave us your name and email and we’ll update you as soon as a share
-          becomes available in your area!
-        </p>
-        <form className='forms'>
-          <input placeholder='Your name' required />
-          <input type='email' placeholder='Your email' required />
-          <button type='submit' className='submit'>
-            Send
-          </button>
-        </form>
+        <div className='section-text'>
+          <h2>Are you a parent without a nanny and looking to share?</h2>
+          <p>
+            Leave us your name and email and we’ll update you as soon as a share
+            becomes available in your area!
+          </p>
+          <form className='forms'>
+            <input placeholder='Your name' required />
+            <input type='email' placeholder='Your email' required />
+            <button type='submit' className='submit'>
+              Send
+            </button>
+          </form>
+        </div>
       </section>
       <div className='divider' />
-      <div className='section3'>
+      {/* <section className='section3'>
         <img src={price} alt='payment exemple' />
         <div className='section-text'>
           <h2>Shared payments made simple</h2>
@@ -56,9 +60,9 @@ function Main() {
           </p>
           <a href='/'>Read how Bridget’s share (without Hapu) ended over $15</a>
         </div>
-      </div>
+      </section> */}
       <div className='divider' />
-      <div className='section4'>
+      {/* <section className='section4'>
         <div className='section-text'>
           <h2>A framework built for the long term</h2>
           <p>
@@ -71,9 +75,9 @@ function Main() {
         </div>
         <a href='/'>Read how Hapu’s tribal background defines our app </a>
         <img src={history} alt='Nany history demonstration' />
-      </div>
+      </section> */}
       <div className='divider' />
-      <div className='section5'>
+      {/* <section className='section5'>
         <img src={diary} alt='diary' />
         <div className='section-text'>
           <h2>Coming soon: Nanny Share Daily Diary!</h2>
@@ -84,7 +88,7 @@ function Main() {
             daily adventures fo your little ones. We can’t wait!
           </p>
         </div>
-      </div>
+      </section> */}
     </div>
   );
 }

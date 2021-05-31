@@ -9,8 +9,8 @@ function App() {
     <div>
       <Banner />
       <Section />
-      {/* <Main /> */}
-      {/* <Footer /> */}
+      <Main />
+      <Footer />
     </div>
   );
 }

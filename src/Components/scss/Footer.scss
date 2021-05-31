@@ -90,3 +90,36 @@ footer {
 .divider {
   @include divider();
 }
+
+@include breakpoint(930px) {
+  .footer-main {
+    padding: 40px 0 0;
+    h2 {
+      font-size: 22px;
+      line-height: 32px;
+      font-weight: 500;
+    }
+    p {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+  .footer-nav {
+    flex-direction: column;
+    gap: 24px;
+    .logo {
+      width: auto;
+    }
+  }
+}
+
+@include breakpoint(480px) {
+  .footer-nav {
+    margin: 48px 0 40px;
+    ul {
+      flex-wrap: wrap;
+      width: 70vw;
+      gap: 16px 30px;
+    }
+  }
+}
