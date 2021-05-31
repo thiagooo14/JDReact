@@ -78,27 +78,26 @@
   & > img {
     width: 31.5vw;
   }
-  @include breakpoint (930px) {
+  @include breakpoint(930px) {
     @include dual-tablet;
     flex-direction: column;
     gap: 40px;
-    &>img {
+    & > img {
       width: 60vw;
     }
   }
 
-  @include breakpoint (480px) {
+  @include breakpoint(480px) {
     @include dual-phone;
     margin-inline: 4.4vw;
-    .section-text{
+    .section-text {
       h2 {
         margin: 0 19vw;
       }
-      &>img {
+      & > img {
         width: 86.5vw;
       }
     }
-    
   }
 }
 
@@ -121,13 +120,20 @@
     align-self: center;
   }
 
-  @include breakpoint (930px) {
+  @include breakpoint(930px) {
     @include column-tablet;
-    
+    & > img {
+      display: none;
+    }
   }
 
-  @include breakpoint (480px) {
-
+  @include breakpoint(480px) {
+    @include column-phone;
+    .section-text {
+      h2 {
+        margin: 0 19vw;
+      }
+    }
   }
 }
 

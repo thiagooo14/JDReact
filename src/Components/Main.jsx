@@ -62,7 +62,7 @@ function Main() {
         </div>
       </section>
       <div className='divider' />
-      {/* <section className='section4'>
+      <section className='section4'>
         <div className='section-text'>
           <h2>A framework built for the long term</h2>
           <p>
@@ -75,7 +75,7 @@ function Main() {
         </div>
         <a href='/'>Read how Hapu’s tribal background defines our app </a>
         <img src={history} alt='Nany history demonstration' />
-      </section> */}
+      </section>
       <div className='divider' />
       {/* <section className='section5'>
         <img src={diary} alt='diary' />
